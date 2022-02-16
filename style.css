@@ -1,10 +1,191 @@
+:root {
+  --dark-background: #1f2937;
+  --light-text: #f9faf8;
+  --mid-light-text: #e5e7eb;
+  --brand-color: #3882f6;
+  --dark-text-color: #1f2937;
+  --quote-background-color: #e5e7eb;
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
   border-collapse: collapse;
   font-family: "Roboto", sans-serif;
+  font-size: 10px;
 }
 
 body {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 5rem;
+  margin: 0;
+}
+
+h3 {
+  font-size: 3.5rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+h4 {
+  color: var(--light-text);
+  font-size: 2.5rem;
+}
+
+header,
+.heroSection {
+  background-color: var(--dark-background);
+  color: var(--light-text);
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+header ul {
+  display: flex;
+  flex-direction: row;
+}
+
+header li {
+  margin: 0;
+  list-style: none;
+  padding: 0 2rem;
+  font-size: 1.5rem;
+}
+
+button {
+  padding: 1rem;
+  font-size: 2rem;
+  background-color: var(--brand-color);
+  color: var(--light-text);
+  border: none;
+  border-radius: 1rem;
+  width: 15rem;
+}
+
+.heroSection {
+  display: flex;
+  flex-direction: row;
+  padding: 10rem;
+}
+
+.heroSection > * {
+  width: 50%;
+}
+
+.heroTextContent {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  font-weight: 300;
+  color: var(--mid-light-text);
+}
+
+.imagePlaceholder {
+  height: 100%;
+  width: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+  text-align: center;
+  padding: 10rem 0;
+}
+
+.itemRow {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  justify-content: center;
+  padding: 0 10%;
+}
+
+.item {
+  width: 13rem;
+  text-align: center;
+}
+
+.itemImage {
+  height: 13rem;
+  width: 13rem;
+  border: 0.3rem solid var(--brand-color);
+  border-radius: 20px;
+  padding: 0;
+}
+
+.item > p {
+  padding: 0;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.quoteBlock {
+  background-color: var(--quote-background-color);
+  padding: 10rem 20%;
+}
+
+.quoteText {
+  font-size: 4rem;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.quoteAuthor {
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-align: right;
+}
+
+.quoteAuthor:before {
+  content: " - ";
+}
+
+.cta {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--brand-color);
+  margin: 5rem 15%;
+  padding: 2rem;
+  border-radius: 1rem;
+  color: var(--light-text);
+}
+
+.ctaBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.ctaBody > * {
+  margin: 0.5rem;
+}
+
+.ctaBody > p {
+  font-weight: 100;
+}
+
+.cta button {
+  border: 0.2rem solid var(--light-text);
+  flex-grow: 0;
+}
+
+footer {
+  background-color: var(--dark-background);
+  color: var(--light-text);
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
 }
